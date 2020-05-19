@@ -10,6 +10,9 @@ contract Ownable {
     //  TODO's
     //  1) create a private '_owner' variable of type address with a public getter function
     address private _owner;
+    function owner() public view returns(address) {
+        return _owner;
+    }
     //  2) create an internal constructor that sets the _owner var to the creater of the contract 
     constructor() internal {
         _owner = msg.sender;
@@ -227,7 +230,7 @@ contract ERC721 is Pausable, ERC165 {
     function _mint(address to, uint256 tokenId) internal {
         // TODO revert if given tokenId already exists or given address is invalid
         require(to != address(0), "invalid address");
-        require(_exists(tokenId), "¡tokenId exists!");
+        require(!_exists(tokenId), "¡tokenId does not exist!");
         // TODO mint tokenId to given address & increase token count of owner
         _tokenOwner[tokenId] = to;
         _ownedTokensCount[to].increment();
