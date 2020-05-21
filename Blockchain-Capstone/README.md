@@ -12,7 +12,7 @@ The capstone will build upon the knowledge you have gained in the course in orde
 	1. `cd eth-contracts/test`
 	2. `truffle test`
 
-# Other Write Bits and Bobs
+# Other Bits and Bobs
 
 1. Addresses:
 	`SquareVerifier: 0x710888b9331303Ae267A981184c866650d6f6F9d`
