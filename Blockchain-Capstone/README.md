@@ -8,7 +8,9 @@ The capstone will build upon the knowledge you have gained in the course in orde
 
 2. In a terminal, run Ganache using `ganache-cli`
 
-3. In the base of the repo then run `truffle eth-contracts/test/`
+3. In a second terminal tab/window run:
+	1. `cd eth-contracts/test`
+	2. `truffle test`
 
 # Other Write Bits and Bobs
 
